@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.body {
+    display: grid;
+    height: 100vh;                           
+    grid-template-rows: 20vh auto 10vh; 
+    grid-template-columns: 20% auto; 
+    grid-template-areas: "header header"
+                         "nav main"
+                         "footer footer";                              
+}
+.header {
+    display: flex;
+    grid-area: header;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.h__div__titulo {
+    height: 15vh;
+    background-color: #64a168;
+    color: white;
+    align-content: center;
+    justify-content: center;
+}
+.h__div_menu {
+    background-color:  #9cb49d;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-general, .menu-servicios{    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    color:#5b5d5e;
+    margin: 20px;    
+    font-size: 1rem;   
+}
+
+.menu-general:hover, .menu-servicios:hover{
+    box-shadow: 0px 0px 6px black inset;
+    color:rgb(193, 186, 186);
+    transition: all 100ms;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e5f1e6;
+}
+.producto {
+    display: inline-block;
+    text-align: center;
+    border: solid 1px black;
+    line-height: 20px;
+    margin: 20px;
+    background-color: #64a168
+}
+.imagen {
+    width: 200px;
+    height: 200px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #64a168;
+}
+.nav {
+    background-color: #e5f1e6;
+    grid-area: nav;
+    background-color: #e5f1e6;
+    margin: 0px;
+    padding: 10px;    
+    font-size: 20px;    
+    border-bottom: 1px solid  #9cb49d;
+}
+
+/* COSO */

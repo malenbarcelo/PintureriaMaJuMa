@@ -1,0 +1,357 @@
+* {
+    margin: 1;
+    padding: 1;
+}
+
+header {
+margin: 15px;
+margin-left: 50px;
+padding:15px;
+height: 10%;
+width: 90%;
+border: 10px;
+border-style: groove;
+border-radius: 10px;
+border: 2px solid white ;
+box-shadow: 0 0 9px red;
+background-image: url(https://i.im.ge/2022/09/29/1Ej5Lz.header2.png);
+background-color: rgb(205, 255, 181);
+background-size: cover;
+z-index: 10;
+
+}
+
+body { 
+font-family: 'FontAwesome', sans-serif;
+background-color: rgb(197, 244, 207);
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+min-width: 90vh;
+/* background-image: url(https://i.im.ge/2022/09/09/OvNwh0.Fondo-2.jpg); */
+background-repeat: no-repeat;
+background-size:contain;
+}
+
+footer {
+  background-image: url(https://i.im.ge/2022/09/05/Ogph8J.banner-web.jpg);
+  background-repeat: no-repeat ;
+  background-position: 50%;
+  background-color: black;
+  padding: 5em;
+  text-align: center;
+  margin-top: 5em;
+  
+
+}
+
+.h1 { 
+font-family: 'Dancing Script', cursive;
+padding: 5px;
+padding-left: 30px;
+color: rgb(18, 16, 16);
+width: 20ex;
+height: 2ex;
+font-size: 120px;
+margin-bottom: 0.2vw;
+margin-top: 2px;
+text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497)
+}
+
+.h4 {
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 35px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.h5 {
+  font-family: 'Dancing Script', cursive;
+  padding-left: 5%;
+  color: rgba(197, 63, 255, 0.497);
+  font-size: 30px;
+  width: 50ex;
+  height: 5ex;
+  text-shadow: 0.1em 0.1em 0.05em rgba(84, 209, 240, 0.826)
+  
+}
+
+.p1 { 
+  text-align: justify;
+  text-overflow: none;
+  font-size: 25px;
+}
+
+.div1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: auto;
+  text-shadow: 0.1em 0.1em 0.05em rgba(47, 243, 174, 0.706);
+  float: left;
+  display: inline-flex;
+  padding: 4px;
+  margin-left: 20px;
+  /* background-color: aliceblue; */
+  width:180px ;
+  height:450px;
+  max-width: 20%;
+  max-height: 20%;
+  border: 3px solid white;
+  border-radius: 10px;
+  border: groove;
+  box-shadow: 0 0 5px red, 0 0 10px blue;
+  background-color: rgb(197, 244, 207);
+  background-image: url(https://yosoy.red/wp-content/uploads/2021/05/pintura.png);
+  overflow: hidden;
+
+}
+
+.div2 {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-block: 30px;
+  margin-left: 10%;
+  margin-top: 150px;
+  height: 40em;
+  width: 60%;
+  border: groove;
+  border-radius: 10px;
+  box-shadow: 0 0 5px red, 0 0 10px blue;
+  align-items: center;
+  background-color: rgb(205, 255, 181);
+}
+
+.div3 {
+  position: center;
+  padding: 5em;
+  margin-top: 15%;
+  margin-left: 28%;
+  width: 700px;
+  height: 500px;
+  max-width: 35%;
+  max-height: 17%;
+  border: groove;
+  border-radius: 10px;
+  box-shadow: 0 0 5px red, 0 0 10px blue;
+
+}
+
+
+.box1 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+
+.cabeza {
+  border: 2px solid white ;
+  box-shadow: inset 0 0 5px blue, 0 0 10px purple;
+  border-radius: 60px;
+  max-width: 400px;
+  margin-left: 45em;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(236, 186, 217);
+  text-align: center;
+}
+.flicker1 { 
+  animation: parpadear 7s infinite backwards ;
+}
+
+@keyframes parpadear {
+  to {
+    color: rgb(114, 38, 161);
+    text-shadow: 0.1em 0.1em 0.05em rgba(5, 4, 5, 0.497)
+
+  }
+}
+
+.imagenes {
+  display: inline;
+  object-position:left ;
+  border: groove;
+  border-radius: 3px;
+  border-color: aquamarine;
+  margin:10px; 
+  margin-left: 5;
+  padding:contain;  
+  width: 90%;
+  height: 60%;
+}
+
+
+
+.menu {
+  
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  line-height: 110px;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  word-break: break-all;
+  overflow: hidden;
+  margin-top: 0;
+  }
+
+.menu a {
+  color: rgba(0, 0, 0, 0.794);
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+
+.menu li {
+margin-top: 22px;
+padding-left: 1.5em;
+}
+
+
+.border {
+  border: groove;
+  border-radius: 10px;
+  box-shadow: 0 0 5px red, 0 0 10px blue;
+}
+
+
+.container-buttons {
+  position: absolute;
+  left: 80%;
+  top: 16%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  min-width: 350px;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.container-buttons a {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.2rem;
+  background-color: white;
+  color: rgb(126, 24, 147);
+  
+}
+
+.container-buttons a::before {
+content:"\f07a";
+display: block;
+margin: 16px 0; 
+transition: all 0.5s ease-in-out;
+
+}
+
+.container-buttons a:hover::before { 
+  margin-top: -50px;
+}
+
+.container-buttons a::after {
+  content: "\f07a";
+  display: block;
+}
+
+.container-buttons .two {
+  background-color: white;
+}
+
+.container-buttons .two::before, .container-buttons .two::after {
+content: "\f279";
+}
+
+.container-buttons .three {
+  background-color: white;
+}
+
+.container-buttons .three::before, .container-buttons .three::after {
+content: "\f879";
+}
+
+.container-buttons .four {
+  background-color: white;
+}
+
+.container-buttons .four::before, .container-buttons .four::after {
+content: "\e533";
+}
+/* background-image:url(https://ibb.co/mbW28r8) */
+
+/* Banner superior :https://es.lovepik.com/image-500549762/blue-technology-background-banner.html */
+
+/* Slider */
+
+.containerslider{
+  margin: auto;
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menuslider{
+  text-align: center;
+  margin: 20px;
+  margin-top: 260px;
+}
+
+.menuslider li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menuslider li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+

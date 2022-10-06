@@ -21,7 +21,7 @@ header {
     background-size: cover;
     padding: 0px 10px;
     background-image: url(https://i.im.ge/2022/09/29/1Ej5Lz.header2.png);
-    height: 200px;
+    height: 170px;
 }
 
 .div-logo{
@@ -41,7 +41,7 @@ header {
     font-family: 'Dancing Script', cursive;    
     padding-left: 30px;
     color: rgb(18, 16, 16);
-    font-size: 120px;
+    font-size: 80px;
     margin-top: 2px;
     text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497);
     text-shadow: 0.1em 0.1em 0.05em brown;
@@ -49,7 +49,7 @@ header {
 }
 
 .frase-logo{
-    font-size: 30px;
+    font-size: 25px;
     padding-left:30px;   
     color: black;
     
@@ -76,11 +76,11 @@ header {
 }
 
 .item-menu{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .top-header{
-    height: 120px;
+    height: 80px;
     background-color: transparent;
 }
 .bottom-header{
@@ -100,7 +100,7 @@ header {
 .menu > div {
     margin-top: 0px;
     padding: 10px;
-    font-size: 20px;        
+    font-size: 15px;        
 }
 
 .item-menu:hover{    
@@ -124,12 +124,17 @@ header {
 /*Menu servicios-----------------------------------------------------------------------*/
 .servicio{    
     background-color: transparent;
-    width: 15vw;
-    font-size: 20px;
+    font-size: 8px;
     margin-bottom:10px;
     border-bottom: solid 1px #777879;
-   
+    
+    align-items: center;
+    justify-content: center;
+    width:150px
 }
+
+
+
 
 .servicio:hover{    
     box-shadow: 0px 0px 6px rgb(119, 97, 141);
@@ -139,24 +144,25 @@ header {
 
 .menu-servicios{
     /*background-color:  #e5f1e6;*/
-    margin-top: 0px
+    margin-top: 0px;
+   
+    
     
 }
 
 a{
     color:#5b5d5e;
     
-    
 }
 
 
 
 
+
 .texto-servicio > p{
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 25px;
     font-weight: 50;
-    
     margin:0px
 }
 
@@ -169,7 +175,7 @@ a{
 
 /*Descripciones e imágenes servicios---------------------------------------------------*/
 .descripcion-servicio, .imagen-servicio{
-    padding-left: 100px;
+    padding-left: 40px;
 }
 
 .descripcion-servicio{
@@ -200,7 +206,8 @@ a{
     grid-column-end: 1;
     grid-row-start:1;
     grid-row-end:10; 
-    padding-top : 10px;    
+    padding-top : 10px;
+    align-content: center;
     
                          
 }
@@ -210,19 +217,6 @@ a{
 
 }
 
-/*
-.div-menu-servicios > div {  
-    
-    background-color: #e5f1e6;
-    background-color:  rgb(243, 233, 233);
-    background-color: red;
-    margin: 0px;
-    padding: 10px;    
-    font-size: 20px;    
-    border-bottom: 1px solid  #9cb49d;    
-}
-
-*/
 
 
 
@@ -236,7 +230,7 @@ a{
 
 
 .imagen{
-    height: 200px;
+    height: 180px;
 
 }
 
@@ -246,11 +240,11 @@ p{
 }
 
 .texto-servicio{
-    width: 80%;
+    width: 90%;
 }
 
 .servicio > a{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
@@ -271,7 +265,8 @@ footer{
     background-color: rgb(204, 200, 200);
     padding-top:20px;
     padding-bottom:2px;
-    font-size: 20px
+    font-size: 15px;
+    height: 250px;
     
 }
 
@@ -285,16 +280,24 @@ footer{
 .footer-div p{
     margin-top: 5px;
     background-color: rgb(204, 200, 200);   
-    font-size:18px
+    font-size:10px
 }
 
 .footer-div b, .copyright, footer i{    
     background-color: rgb(204, 200, 200);   
+    
 }
 
+.horario{
+    line-height: 15px;
+}
 .contacto-footer{
     display: inline;
     background-color: rgb(204, 200, 200);
+}
+
+.copyright{
+    font-size:10px
 }
 
 /*Formulario------------------------------------------------------------*/
@@ -346,7 +349,7 @@ textarea{
 
 
 
-@media(max-width:1400px){   
+@media(max-width:768px){   
 
     .grid-container {                                 
         grid-template-columns: 1fr;  
@@ -432,7 +435,7 @@ textarea{
 
 }
 
-@media(max-width:1100px){
+@media(max-width:768px){
 
     .imagen-servicio{
         flex-direction: column;

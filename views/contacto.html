@@ -41,21 +41,23 @@
         <div><a href="contacto.html" class="item-menu">Contacto</a></div>
     </nav>
 
+    
     <section class="flex-contacto">
     
         <div class="formulario">
             <h2 class="titulo-contactos">Contáctenos</h2>
-            <form class="formulario-contacto">
-                <input placeholder="Nombre">
-                <input placeholder="Mail">
-                <input placeholder="Teléfono">
-                <textarea placeholder="Mensaje"></textarea>
+            
+            <form class="formulario-contacto" name="formContacto">
+                <input type=text placeholder="Nombre" name="nombre">
+                <input type=text placeholder="Mail" name="mail">
+                <input type=text placeholder="Teléfono" name="telefono">
+                <textarea placeholder="Mensaje" name="mensaje"></textarea>
                 <div class="botones">
-                    <input type="reset" value="Borrar" class="boton">
-                    <input type="submit" value="Enviar" class="boton">
+                    <input type="button" class="boton" value="Borrar" onclick=document.formContacto.submit()>
+                    <input type="button" class="boton" value="Enviar" onclick="validarEnviar()">
                 </div>
-                
             </form>
+
         </div>
 
         <div class="showroom">
@@ -65,33 +67,63 @@
 
     </section>
 
+    <!--VALIDO EL FORMUALRIO-->
 
+    <script>
+        
+        function validarEnviar() {
+            //valido el nombre
+            if (document.formContacto.nombre.value.length == 0) {
+                alert("Ingrese su nombre")
+                document.formContacto.nombre.focus()
+                return 0;
+            }
 
+            //valido el mail
+            if (document.formContacto.mail.value.length == 0) {
+                alert("Ingrese su mail")
+                document.formContacto.mail.focus()
+                return 0;
+            }else if(!(document.formContacto.mail.value.includes('@'))||!(document.formContacto.mail.value.includes('.com'))){
+                alert("Ingrese un mail válido")
+                document.formContacto.mail.focus()
+                return 0;
+            }
 
+            //valido el teléfono
+            tel = document.formContacto.telefono.value
+            tel = validarEntero(tel)
+            document.formContacto.telefono.value = tel
+            if (tel == "" || document.formContacto.telefono.value.length < 8) {
+                alert("Debe ingresar un número de teléfono, el mismo debe ser numérico y contener al menos 8 dígitos")
+                document.formContacto.telefono.focus()
+                return 0;
+            }
 
+            //valido el mensaje
+            if (document.formContacto.mensaje.value.length == 0) {
+                alert("Debe ingresar un mensaje")
+                document.formContacto.mensaje.focus()
+                return 0;
+            }
+            
+            alert("Su mensaje ha sido enviado, le responderemos a la brevedad");
+            document.formContacto.submit();
+        }
 
+        function validarEntero(valor) {
+        valor = parseInt(valor)
+        //Compruebo si es un valor numérico
+        if (isNaN(valor)) {
+            //entonces (no es numero) devuelvo el valor cadena vacia
+            return ""
+        } else {
+            //En caso contrario (Si era un número) devuelvo el valor
+            return valor
+        }
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
+    </script>
     
 
 
@@ -122,9 +154,7 @@
         <p class="copyright">Copyright © 1999-2020 Pinturerias MaJuMa S.A.</p>
         
     
-    </footer>
-
-               
+    </footer>            
 
         
     

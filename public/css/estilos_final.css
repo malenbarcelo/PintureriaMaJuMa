@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .body {
@@ -37,7 +38,10 @@
     justify-content: center;
     align-items: center;
 }
-.menu-general, .menu-servicios{    
+.menu-servicios {
+    transform: translateY(20px);
+}
+.menu-general, .menu-servicios{ 
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -46,12 +50,22 @@
     margin: 20px;    
     font-size: 1rem;   
 }
-
-.menu-general:hover, .menu-servicios:hover{
-    box-shadow: 0px 0px 6px black inset;
-    color:rgb(193, 186, 186);
-    transition: all 100ms;
+.menu {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+        cursor: pointer;
+        background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
+        background-size: 200%;
+        background-position: right;
+        transition: background-position 0.2s;
+    }
+.menu:hover {
+        background-position: left;
+        font-weight: 700;
 }
+
 
 .main {
     grid-area: main;

@@ -1,6 +1,8 @@
 * {
     margin: 1;
     padding: 1;
+
+
 }
 
 header {
@@ -8,7 +10,7 @@ margin: 15px;
 margin-left: 50px;
 padding:15px;
 height: 10%;
-width: 90%;
+flex-basis: 90%;
 border: 10px;
 border-style: groove;
 border-radius: 10px;
@@ -22,8 +24,8 @@ z-index: 10;
 }
 
 body { 
-font-family: 'FontAwesome', sans-serif;
-background-color: rgb(197, 244, 207);
+font-family: 'FontAwesome', 'Comfortaa', cursive;
+background-color: rgb(226, 243, 255);
 display: flex;
 flex-direction: column;
 min-height: 100vh;
@@ -34,15 +36,13 @@ background-size:contain;
 }
 
 footer {
-  background-image: url(https://i.im.ge/2022/09/05/Ogph8J.banner-web.jpg);
+  background-image: url(https://i.im.ge/2022/10/06/1paT4X.Banner2.jpg);
+  /* background-image: url(https://i.im.ge/2022/09/05/Ogph8J.banner-web.jpg); */
   background-repeat: no-repeat ;
   background-position: 50%;
-  background-color: black;
   padding: 5em;
   text-align: center;
   margin-top: 5em;
-  
-
 }
 
 .h1 { 
@@ -56,6 +56,8 @@ font-size: 120px;
 margin-bottom: 0.2vw;
 margin-top: 2px;
 text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497)
+
+
 }
 
 .h4 {
@@ -91,6 +93,7 @@ text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497)
   display: inline-flex;
   padding: 4px;
   margin-left: 20px;
+  margin-top: 100px;
   /* background-color: aliceblue; */
   width:180px ;
   height:450px;
@@ -111,17 +114,17 @@ text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497)
   flex-wrap: nowrap;
   margin-block: 30px;
   margin-left: 10%;
-  margin-top: 150px;
-  height: 40em;
-  width: 60%;
+  margin-top: 100px;
+  width: 70%;
   border: groove;
   border-radius: 10px;
   box-shadow: 0 0 5px red, 0 0 10px blue;
   align-items: center;
-  background-color: rgb(205, 255, 181);
+  background-color: rgb(188, 75, 111);
 }
 
 .div3 {
+  font-family: 'Comfortaa',cursive;
   position: center;
   padding: 5em;
   margin-top: 15%;
@@ -152,7 +155,7 @@ text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497)
   border-radius: 60px;
   max-width: 400px;
   margin-left: 45em;
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 20px;
   text-align: center;
   color: rgb(236, 186, 217);
@@ -210,6 +213,7 @@ margin-top: 22px;
 padding-left: 1.5em;
 }
 
+/* atajo para usar borde */
 
 .border {
   border: groove;
@@ -217,11 +221,12 @@ padding-left: 1.5em;
   box-shadow: 0 0 5px red, 0 0 10px blue;
 }
 
+/* Botonera de header */
 
 .container-buttons {
   position: absolute;
   left: 80%;
-  top: 16%;
+  top: 15%;
   transform: translate(-50%, -50%);
   display: flex;
   min-width: 350px;
@@ -283,16 +288,15 @@ content: "\f879";
 .container-buttons .four::before, .container-buttons .four::after {
 content: "\e533";
 }
-/* background-image:url(https://ibb.co/mbW28r8) */
 
-/* Banner superior :https://es.lovepik.com/image-500549762/blue-technology-background-banner.html */
 
 /* Slider */
 
 .containerslider{
   margin: auto;
-  width: 800px;
-  padding: 30px;
+  width: 820px;
+  margin-top: 5px;
+  padding: 10px;
 }
 
 ul, li {
@@ -303,7 +307,7 @@ ul, li {
 
 ul.slider{
   position: relative;
-  width: 800px;
+  width: 820px;
   height: 300px;
 }
 
@@ -315,12 +319,12 @@ ul.slider li {
     width: inherit;
     height: inherit;
     transition: opacity .5s;
-    background:#fff;
+    
 }
 
 ul.slider li img{
   width: 100%;
-  height: 550px;
+  height: 55em;
   object-fit: cover;
 }
 
@@ -335,7 +339,7 @@ ul.slider li:target {
 .menuslider{
   text-align: center;
   margin: 20px;
-  margin-top: 260px;
+  margin-top: 45em;
 }
 
 .menuslider li{
@@ -347,7 +351,7 @@ ul.slider li:target {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(33, 90, 189);
   padding: 10px;
   width: 20px;
   height: 20px;
@@ -355,3 +359,305 @@ ul.slider li:target {
   border-radius: 100%;
 }
 
+/* ----Responsive!---- */
+
+
+@media only screen and (max-width:450px) {
+  
+  header {
+    margin: 5px;
+    padding:10px;
+    height: 15%;
+    max-width: 49%;
+     }
+
+  .h1 {
+    margin-top: -15px;
+    font-size: 4em;
+  }
+
+  .h5 {
+    font-size: 17px;
+       
+  }
+
+  .container-buttons {
+      min-width: 150px;
+      flex-direction: row;
+      left: 77%;
+      top: 11%;
+    }
+  
+  .container-buttons a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      border-radius: 50%;
+      text-decoration: none;
+      overflow: hidden;
+      text-align: center;
+      font-size: .8rem;
+      background-color: white;
+      color: rgb(126, 24, 147);
+       }
+
+  .container-buttons a:hover::before { 
+        margin-top: -18px;
+      }
+
+  .cabeza {
+        font-size: 10px;
+        max-width: 150px;
+        margin-left: 18em;
+        margin-top: 70px;
+       }
+
+  .box1 { 
+    margin-top: 15px;
+    
+  }
+  .menu {
+    margin-top: -34px;
+    font-size: 8px;
+    align-items: center;
+   
+   
+    }
+  .div1 {
+      
+      float: left;
+      display: inline-flex;
+      padding: 1px;
+      width:75px ;
+      height:350px;
+    }
+
+  .div3 {
+        margin-top: 14%;
+        margin-left: 1%;
+        width: 30%;
+        height: 45%;
+              
+      }
+  .p1 {
+       
+          text-align: justify;
+          text-overflow: none;
+          font-size: 20px;
+              }
+
+  footer {
+    background-position-x: left;   
+    background-size: 53%;
+          }
+
+  .div2 {
+            margin-top: 50px;
+            margin-left: 50px;
+            height: 38em;
+            width: 30em;
+            border: groove;
+          }
+  .containerslider{
+            width: 100%;
+            height: 30em;
+            padding: 5px;
+          }
+          
+          ul, li {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+          }
+          
+          ul.slider{
+            position: relative;
+            width: 90%;
+            height: 30em;
+          }
+          
+          ul.slider li {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              opacity: 0;
+              width: inherit;
+              height: inherit;
+              transition: opacity .5s;
+          }   
+
+          ul.slider li img{
+            width: 472px;
+            height: 490px;
+            object-fit: cover;
+          }
+
+          .menuslider{
+            text-align: center;
+            margin: 20px;
+            margin-top: 25px;
+          }
+          
+          .menuslider li a{
+            display: inline-block;
+            padding: 5px;
+            width: 15px;
+            height: 15px;
+            font-size: 15px;
+            border-radius: 100%;
+          }
+          
+    }
+
+/* Tablets */
+
+@media only screen and (max-width:950px) {
+  header {
+    margin: 15px;
+    margin-left: 20px;
+    padding:15px;
+    height: 10%;
+    max-width: 70%;
+     }
+  .h1 {
+    font-size: 5em;
+  }
+  .h5 {
+    font-size: 20px;
+       
+  }
+  .container-buttons {
+      min-width: 200px;
+      flex-direction: row;
+      left: 60%;
+      top: 15%;
+    }
+  
+  .container-buttons a {
+      width: 45px;
+      height: 45px;
+      display: block;
+      border-radius: 50%;
+      text-decoration: none;
+      overflow: hidden;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: white;
+      color: rgb(126, 24, 147);
+       }
+
+  .container-buttons a:hover::before { 
+        margin-top: -30px;
+      }
+
+  .cabeza {
+        font-size: 13px;
+        max-width: 200px;
+        margin-left: 18em;
+        margin-top: 100px;
+       }
+
+  .box1 { 
+    margin-top: 70px;
+    
+  }
+  .menu {
+    font-size: 12px;
+    align-items: center;
+    word-break: break-all;
+    overflow: hidden;
+    margin-inline-end: 0%;
+    margin-top: -25%;
+   
+    }
+  .div1 {
+      margin-top: 4.5%;
+      float: left;
+      display: inline-flex;
+      padding: 3px;
+      width:120px ;
+      height:350px;
+    }
+
+  .div3 {
+        margin-top: 14%;
+        position: center;
+        padding: 5em;
+        margin-left: 15%;
+        width: 700px;
+        height: 500px;
+        max-width: 35%;
+        max-height: 17%;
+        
+      }
+  .p1 {
+       
+          text-align: justify;
+          text-overflow: none;
+          font-size: 20px;
+              }
+
+  footer {
+    background-position-x: left;   
+    background-size: 750px;
+          }
+
+  .div2 {
+            margin-top: 50px;
+            margin-left: 50px;
+            height: 38em;
+            width: 30em;
+            border: groove;
+          }
+  .containerslider{
+            width: 100%;
+            height: 30em;
+            padding: 5px;
+          }
+          
+          ul, li {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+          }
+          
+          ul.slider{
+            position: relative;
+            width: 90%;
+            height: 30em;
+          }
+          
+          ul.slider li {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              opacity: 0;
+              width: inherit;
+              height: inherit;
+              transition: opacity .5s;
+          }   
+
+          ul.slider li img{
+            width: 472px;
+            height: 490px;
+            object-fit: cover;
+          }
+
+          .menuslider{
+            text-align: center;
+            margin: 20px;
+            margin-top: 25px;
+          }
+          
+          .menuslider li a{
+            display: inline-block;
+            padding: 5px;
+            width: 15px;
+            height: 15px;
+            font-size: 15px;
+            border-radius: 100%;
+          }
+          
+    }
+
+    

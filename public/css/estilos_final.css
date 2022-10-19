@@ -4,43 +4,77 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     box-sizing: border-box;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
-.body {
-    display: grid;
-    height: 100vh;                           
-    grid-template-rows: 20vh auto 10vh; 
-    grid-template-columns: 20% auto; 
+#body_productos {
+    overflow-x: hidden;
+    background-color:  rgb(243, 233, 233);
+    display: grid;                       
+    grid-template-rows: auto auto auto auto; 
+    grid-template-columns: 20vw 80vw; 
     grid-template-areas: "header header"
+                         "menu menu"
                          "nav main"
                          "footer footer";                              
 }
-.header {
+header {
+    width: 100vw;
+    margin:0px;
+    border-style: groove;
+    border-radius: 10px;
+    border: 2px solid white ;
+    box-shadow: 0 0 9px red;
+    background-size: cover;
+    padding: 0px 10px;
+    padding-bottom:8px; 
+    background-image: url(https://i.im.ge/2022/09/29/1Ej5Lz.header2.png);
+    margin-bottom:15px;
+}
+.top-header, .div-logo, .logo{
+    background-color: transparent;
+}
+.logo {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(18, 16, 16);
+    text-shadow: 0.1em 0.1em 0.05em rgba(197, 63, 255, 0.497);
+    text-shadow: 0.1em 0.1em 0.05em brown;
+    font-size: 50px;
+    margin-top:0px;
+    margin-bottom:0px   
+}
+.frase-logo { 
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0.1em 0.1em 0.05em rgba(158, 155, 159, 0.497);
+    font-size: 18px;
+    padding-left:0px; 
+    color: black;
+    margin-top:3px;
+    margin-bottom:10px;    
+}
+
+.bottom-header, .frase-logo{
+    background-color: transparent;
+}
+#section_productos {
     display: flex;
-    grid-area: header;
+    grid-area: menu;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.h__div__titulo {
-    height: 15vh;
-    background-color: #64a168;
-    color: white;
-    align-content: center;
-    justify-content: center;
-}
+
 .h__div_menu {
-    background-color:  #9cb49d;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.menu-servicios {
-    transform: translateY(20px);
-}
+
 .menu-general, .menu-servicios{ 
     padding-left: 20px;
     padding-right: 20px;
@@ -51,29 +85,29 @@
     font-size: 1rem;   
 }
 .menu {
-        text-decoration: none;
-        display: inline-block;
-        padding: 5px;
-        margin: 10px;
-        cursor: pointer;
-        background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
-        background-size: 200%;
-        background-position: right;
-        transition: background-position 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+   cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, rgb(203, 147, 79));
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.2s;
     }
 .menu:hover {
-        background-position: left;
-        font-weight: 700;
+    background-position: left;
+    font-weight: 700;
 }
 
 
-.main {
+#main_productos {
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    background-color: #e5f1e6;
+    justify-content: space-between;
 }
 .producto {
     display: inline-block;
@@ -81,27 +115,89 @@
     border: solid 1px black;
     line-height: 20px;
     margin: 20px;
-    background-color: #64a168
+    background-color: bisque;
 }
 .imagen {
     width: 200px;
     height: 200px;
 }
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: footer;
-    background-color: #64a168;
-}
+
 .nav {
+    display: flex;
+    text-decoration: none;
     background-color: #e5f1e6;
     grid-area: nav;
-    background-color: #e5f1e6;
     margin: 0px;
     padding: 10px;    
-    font-size: 20px;    
-    border-bottom: 1px solid  #9cb49d;
+    font-size: 20px;
+    background-color:  rgb(243, 233, 233);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(204, 200, 200);
+    font-size: 15px;
 }
 
-/* COSO */
+.footer-div{
+    background-color: transparent;
+    text-align: center;
+}
+
+.footer-div > p{
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.footer-div > p, .footer-div > b, .footer-div > i, .copyright{
+    background-color: transparent
+}
+
+.contacto-footer{
+    display: inline;
+}
+
+.fa-location-dot, .fa-at, .fa-whatsapp{
+    margin-bottom:3px
+}
+
+.copyright{
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 750px) {
+    #body_productos {
+        display: grid;                          
+        grid-template-rows: auto auto auto auto auto; 
+        grid-template-columns: 100vw; 
+        grid-template-areas: "header"
+                             "menu"
+                             "nav"
+                             "main"
+                             "footer";                              
+    }
+    .m_div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-template-areas: "servicio1 servicio2"
+    }
+    #servicio1 {
+        display: inline-block;
+        grid-area: servicio1;
+    }
+    #servicio2 {
+        display: inline-block;
+        grid-area: servicio2;
+    }
+}

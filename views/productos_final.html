@@ -1,18 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/estilos_final.css">
     <title>Productos</title>
-    <link rel="stylesheet" href="/public/css/estilos_final.css">
 </head>
 
-<body class="body"> 
-    <header class="header">
-        <div class= h__div__titulo><h1> MaJuMa </h1></div>
+<body id="body_productos"> 
 
+    <header>
+        <div class="top-header">
+            <div class="div-logo"><h1 class="logo">Majuma</h1></div>
+        </div>
+
+        <div class="bottom-header">
+            <h2 class="frase-logo">Donde tus colores cobran vida...</h2>
+        </div>
+
+        <div class="div-menu-hamburguesa">    
+            <a href="#" class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </a> 
+        </div>        
+         
+    </header>
+
+    <section id="section_productos">
         <div class="h__div_menu">
             <div><a href="principal.html" class="menu">Home</a></div>
             <div><a href="productos_final.html" class="menu">Productos</a></div>
@@ -20,9 +38,9 @@
             <div><a href="contacto.html" class="menu">Contacto</a></div>
         </div>
 
-    </header>
+    </section>
 
-    <main class="main">
+    <main id="main_productos">
         <div class= "m_div">
             <div class="producto"> 
                 <img src="/public/images/productos/productouno.jpg" class="imagen"> 
@@ -104,16 +122,42 @@
     <nav class="nav">
         <div>
             <h2>Nuestros Productos </h2>
-            <div>
+            <div id="servicio1">
                 <a href="#servicio_1" class="menu">Pinturas</a>
             </div>
-            <div>
+            <div id="servicio2">
                 <a href="#servicio_2" class="menu">Accesorios</a>
             </div>
         </div>
     </nav>
-    <footer class="footer">
-        <h1> MaJuMa </h1>
+    
+    <footer>
+        
+        <div class="footer-div">
+            <i class="fa-regular fa-credit-card"></i>
+            <b>Pagá hasta en 18 cuotas sin interés</b>
+            <p>Te ofrecemos las mejores formas de financiación!</p>
+        </div>
+    
+        <div class="footer-div">
+            <i class="fa-regular fa-clock"></i>
+            <b>Horario de atención</b>
+            <p class="horario">Lunes a viernes: 9:00 a 18:00 hs <br>Sábados: 9:00 a 14:00 hs</p>
+        </div>
+        
+        <div class="footer-div">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="contacto-footer">Pringles 1060, CABA</p><br>
+            <i class="fa-solid fa-at"></i>
+            <p class="contacto-footer">majuma-pinturerias@gmail.com</p><br>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p class="contacto-footer">+54 9 11 5504 2945</p>
+        </div>
+        
+        <br>        
+        <p class="copyright">Copyright © 1999-2020 Pinturerias MaJuMa S.A.</p>
+        
+    
     </footer>
 
         
